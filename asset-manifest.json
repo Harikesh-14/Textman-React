@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Textman-React/static/css/main.073c9b0a.css",
-    "main.js": "/Textman-React/static/js/main.aa38c9ec.js",
+    "main.js": "/Textman-React/static/js/main.f7916059.js",
     "static/js/787.11500cf9.chunk.js": "/Textman-React/static/js/787.11500cf9.chunk.js",
     "index.html": "/Textman-React/index.html",
     "main.073c9b0a.css.map": "/Textman-React/static/css/main.073c9b0a.css.map",
-    "main.aa38c9ec.js.map": "/Textman-React/static/js/main.aa38c9ec.js.map",
+    "main.f7916059.js.map": "/Textman-React/static/js/main.f7916059.js.map",
     "787.11500cf9.chunk.js.map": "/Textman-React/static/js/787.11500cf9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.aa38c9ec.js"
+    "static/js/main.f7916059.js"
   ]
 }
