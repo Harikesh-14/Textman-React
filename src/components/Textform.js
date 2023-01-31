@@ -7,9 +7,9 @@ export default function Textform(props) {
         marginBottom: '10px'
     }
 
-    let para = {
-        textAlign: 'left',
-    }
+    // let para = {
+    //     textAlign: 'left',
+    // }
 
     // Adding JS here
     const [text, setText] = useState("Delete this and re-enter your text...");
@@ -73,7 +73,7 @@ export default function Textform(props) {
         <>
             <div className="mb-3 my-3 container">
                 <h2 className={`text-${props.mode}`} style={h2Style}>{text.length} characters and {text.split(/\s+/).filter((elem) => { return elem !== '' }).length} words</h2>
-                <p className={`text-${props.mode}`} style={h2Style}>{0.008 * text.split(" ").filter((elem) => {return elem.length !== 0}).length} Minutes</p>
+                <p className={`text-${props.mode}`} style={h2Style}>{0.008 * text.split(" ").filter((elem) => { return elem.length !== 0 }).length} Minutes</p>
                 <textarea
                     style={
                         {
@@ -96,9 +96,17 @@ export default function Textform(props) {
                 <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={copyText}>Copy Text</button>
                 <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={clearBox}>Clear</button>
             </div>
-            <div className={`text-${props.mode} container my-5`} style={h2Style}>
-                <h2>Preview</h2>
-                <p style={para}>{text.length > 0 ? text : "Enter something to preview"}</p>
+            <div
+                className={`text-${props.mode} container my-5 form-control`}
+                style={
+                    {
+                        backgroundColor: props.mode === 'dark' ? 'white' : '#303030',
+                        color: props.mode === 'dark' ? 'black' : 'white'
+                    }
+                }>
+                <h2 style={h2Style}>Preview</h2>
+                <hr />
+                <p style={{textAlign: 'left', marginTop: '30px'}}>{text.length > 0 ? text : "Enter something to preview"}</p>
             </div>
         </>
     )
